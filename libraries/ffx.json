@@ -1,0 +1,18 @@
+{
+  "properties": {
+    "v": "1.0.0-beta"
+    "pj": "1.0.1"
+  },
+  "link": "https://ffx.biochem.uiowa.edu/index.html",
+  "repositories": [
+    "https://dl.bintray.com/jmschnie/maven"
+  ],
+  "dependencies": [
+    "edu.uiowa.eng.ffx:numerics:$v",
+    "edu.uiowa.eng.ffx:pj:$pj1",
+    "edu.uiowa.eng.ffx:ui:$v"
+  ],
+  "imports": [
+    "ffx.Main.*",
+  ]
+}
