@@ -5,7 +5,7 @@
   },
   "link": "https://ffx.biochem.uiowa.edu/index.html",
   "repositories": [
-    "https://dl.bintray.com/jmschnie/maven"
+    "https://dl.bintray.com/mjschnie/maven"
   ],
   "dependencies": [
     "edu.uiowa.eng.ffx:numerics:$v",
