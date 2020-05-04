@@ -2,3 +2,5 @@
 echo "postBuild starting"
 wget https://ffx.biochem.uiowa.edu/ffx-all.jar
 cp ffx-all.jar /srv/conda/envs/notebook/lib/python3.6/site-packages/run_kotlin_kernel/jars/.
+cp jar_args.json /srv/conda/envs/notebook/lib/python3.6/site-packages/run_kotlin_kernel/config/jar_args.json
+echo "postBuild finished"
