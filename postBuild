@@ -1,0 +1,4 @@
+
+mkdir .jupyter_kotlin/libraries
+cp libraries/ffx.json .jupyter_kotlin/libraries/.
+
