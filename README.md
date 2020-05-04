@@ -1,7 +1,7 @@
 # Jupyter
 Jupyter Notebooks for Force Field X using the Kotlin Kernel
 
-[![Binder][binder-image]](https://mybinder.org/v2/gh/SchniedersLab/Jupyter/master?filepath=binder%2Fletsplot.ipynb) [![Binder][binder-lab-image]](https://mybinder.org/v2/gh/SchniedersLab/Jupyter/master?urlpath=lab/tree/binder/letsplot.ipynb)
+[![Binder][binder-image]](https://mybinder.org/v2/gh/SchniedersLab/Jupyter/master?filepath=letsplot.ipynb) [![Binder][binder-lab-image]](https://mybinder.org/v2/gh/SchniedersLab/Jupyter/master?urlpath=lab/tree/letsplot.ipynb)
 
 ---
 
