@@ -1,4 +1,4 @@
 /bin/bash
 echo "postBuild starting"
 wget https://ffx.biochem.uiowa.edu/ffx-all.jar
-export CLASSPATH="ffx-all.jar:$CLASSPATH"
+cp ffx-all.jar /srv/conda/envs/notebook/lib/python3.6/site-packages/run_kotlin_kernel/jars/.
