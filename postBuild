@@ -2,5 +2,5 @@
 echo "postBuild starting"
 mkdir .jupyter_kotlin
 mkdir .jupyter_kotlin/libraries
-cp libraries/ffx.json .jupyter_kotlin/libraries/.
+cp ffx.json .jupyter_kotlin/libraries/.
 
