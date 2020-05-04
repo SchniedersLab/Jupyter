@@ -1,6 +1,4 @@
-
+/bin/bash
 echo "postBuild starting"
-mkdir .jupyter_kotlin
-mkdir .jupyter_kotlin/libraries
-cp ffx.json .jupyter_kotlin/libraries/.
-
+wget https://ffx.biochem.uiowa.edu/ffx-all.jar
+export CLASSPATH="ffx-all.jar:$CLASSPATH"
