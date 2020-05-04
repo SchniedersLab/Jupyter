@@ -1,20 +1,21 @@
 {
   "properties": {
-    "v": "1.0.0-beta",
-    "pj": "1.0.1"
+    "v": "1.0.0-beta"
   },
   "link": "https://ffx.biochem.uiowa.edu/index.html",
   "repositories": [
-    "https://dl.bintray.com/mjschnie/maven"
+    "https://dl.bintray.com/mjschnie/maven",
+    "http://github.com/mjschnie/dependency/raw/master",
+    "https://repo.maven.apache.org/maven2",
+    "http://jogamp.org/deployment/maven",
+    "http://github.com/biojava/maven-repo/raw/master/",
+    "http://www.biojava.org/download/maven/"
   ],
   "dependencies": [
-    "edu.uiowa.eng.ffx:numerics:$v",
-    "edu.uiowa.eng.ffx:pj:$pj",
     "edu.uiowa.eng.ffx:ui:$v"
   ],
   "imports": [
     "ffx.Main.*"
   ]
 }
-
 
