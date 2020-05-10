@@ -5,9 +5,7 @@ FROM openjdk:11.0.7
 
 RUN apt-get update
 RUN apt-get install -y python3-pip
-
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
-RUN apt install nodejs
+RUN apt-get install -y nodejs
 
 COPY . .
 
@@ -42,7 +40,7 @@ RUN adduser --disabled-password \
 
 COPY . $HOME
 RUN mkdir $HOME/.jupyter
-COPY $HOME/beakerx.json .jupyter/.
+COPY $HOME/beakerx.json $HOME/.jupyter/.
 RUN chown -R $NB_UID $HOME
 
 USER $NB_USER
