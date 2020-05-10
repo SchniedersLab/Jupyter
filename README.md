@@ -1,5 +1,5 @@
 # Jupyter
-Jupyter Notebooks for Force Field X using the Kotlin Kernel
+Jupyter Notebooks for Force Field X using the BeakerX Kernel
 
 [![Binder][binder-image]](https://mybinder.org/v2/gh/SchniedersLab/Jupyter/master?filepath=letsplot.ipynb) [![Binder][binder-lab-image]](https://mybinder.org/v2/gh/SchniedersLab/Jupyter/master?urlpath=lab/tree/letsplot.ipynb)
 
