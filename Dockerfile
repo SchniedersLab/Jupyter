@@ -8,7 +8,7 @@ RUN apt-get install -y python3-pip
 
 # Install jupyter, jupyterlab, beakerx and jupyter lab extensions
 COPY . .
-RUN pip3 install --no-cache-dir jupyter jupyterlab beakerx npm
+RUN pip3 install --no-cache-dir jupyter jupyterlab beakerx npm nodejs
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 RUN jupyter labextension install beakerx-jupyterlab
 
