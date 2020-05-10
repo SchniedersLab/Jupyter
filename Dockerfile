@@ -11,9 +11,9 @@ COPY . .
 # Install Node and NPM
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 RUN export NVM_DIR="$HOME/.nvm"
-RUN ls /root/.nvm
-RUN /root/.nvm/nvm install node
-RUN /root/.nvm/nvm use node
+RUN ls -ltr /root/.nvm
+RUN /root/.nvm/nvm-exec install node
+RUN /root/.nvm/nvm-exec use node
 
 # Install jupyter, jupyterlab, beakerx and jupyter lab extensions
 RUN pip3 install --no-cache-dir jupyter jupyterlab beakerx
