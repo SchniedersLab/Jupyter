@@ -6,7 +6,7 @@ FROM openjdk:11.0.7
 RUN apt-get update
 RUN apt-get install -y python3-pip
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt install nodejs
 
 COPY . .
