@@ -12,8 +12,6 @@ COPY . .
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 RUN export NVM_DIR="$HOME/.nvm"
 RUN . /root/.bashrc
-RUN echo $PATH
-RUN which nvm
 RUN nvm install node
 RUN nvm use node
 
