@@ -6,9 +6,15 @@ FROM openjdk:11.0.7
 RUN apt-get update
 RUN apt-get install -y python3-pip
 
-# Install jupyter, jupyterlab, beakerx and jupyter lab extensions
 COPY . .
-RUN pip3 install --no-cache-dir jupyter jupyterlab beakerx npm nodejs
+
+# Install Node and NPM
+RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+RUN nvm install node
+RUN nvm use node
+
+# Install jupyter, jupyterlab, beakerx and jupyter lab extensions
+RUN pip3 install --no-cache-dir jupyter jupyterlab beakerx
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 RUN jupyter labextension install beakerx-jupyterlab
 
