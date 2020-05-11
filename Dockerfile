@@ -13,11 +13,12 @@ RUN apt-get install -y python3-pip
 COPY . .
 RUN ([ -f requirements.txt ] \
     && pip3 install --no-cache-dir -r requirements.txt) \
-        || pip3 install --no-cache-dir jupyter jupyterlab
+        || pip3 install --no-cache-dir jupyter jupyterlab beakerx
 
 USER root
 
-RUN conda install -c conda-forge ipywidgets beakerx
+# Install BeakerX
+RUN beakerx install
 
 # Download Force Field X
 ENV FFX_TAR ffx-$FFX_VERSION-bin.tar.gz
