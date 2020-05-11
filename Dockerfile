@@ -16,10 +16,8 @@ RUN tar xzf $FFX_TAR
 RUN mv ffx-$FFX_VERSION ffx
 
 # Set up the user environment
+RUN echo ${NB_USER} ${NB_UID} ${HOME}
 ARG NB_USER=beakerx
-ARG NB_UID=1000
-ENV USER ${NB_USER}
-ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
 ENV SHELL /bin/bash
 
@@ -28,9 +26,10 @@ RUN mkdir $HOME/.jupyter
 # COPY $HOME/beakerx.json $HOME/.jupyter/.
 # RUN chown -R $NB_UID $HOME
 
+RUN echo $PATH
+
 USER $NB_USER
 
 # Launch the notebook server
 WORKDIR $HOME
 CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
-
