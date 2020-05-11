@@ -1,20 +1,6 @@
-FROM openjdk:11.0.7
-
-# Use GraalVM for JavaScript and Python
-# FROM findepi/graalvm:20.0.0-java11-polyglot
-
-RUN apt-get update
-RUN apt-get install -y python3-pip
-
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get install -y nodejs
+FROM beakerx/beakerx:1.3.0
 
 COPY . .
-
-# Install jupyter, jupyterlab, beakerx and jupyter lab extensions
-RUN pip3 install --no-cache-dir jupyter jupyterlab beakerx nodejs npm
-RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
-RUN jupyter labextension install beakerx-jupyterlab
 
 USER root
 
