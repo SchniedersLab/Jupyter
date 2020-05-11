@@ -22,7 +22,7 @@ jupyter-core==4.4.0
 jupyter==1.0.0
 jupyterlab-server==0.2.0
 jupyterlab==0.35.4
-kotlin-jupyter-kernel==0.8.028
+kotlin-jupyter-kernel==0.8.0.28
 mistune==0.8.4
 nbconvert==5.4.1
 nbformat==4.4.0
