@@ -18,7 +18,7 @@ RUN ([ -f requirements.txt ] \
 USER root
 
 # Install BeakerX
-RUN beakerx install
+# RUN beakerx install
 
 # Download Force Field X
 ENV FFX_TAR ffx-$FFX_VERSION-bin.tar.gz
