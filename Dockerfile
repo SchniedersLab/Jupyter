@@ -16,7 +16,7 @@ RUN tar xzf $FFX_TAR
 RUN mv ffx-$FFX_VERSION ffx
 
 # Set up the user environment
-ARG NB_USER=jovyan
+ARG NB_USER=beakerx
 ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
