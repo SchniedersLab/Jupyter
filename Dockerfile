@@ -15,14 +15,8 @@ RUN wget https://ffx.biochem.uiowa.edu/$FFX_TAR
 RUN tar xzf $FFX_TAR
 RUN mv ffx-$FFX_VERSION ffx
 
-# Set up the user environment
-RUN echo ${NB_USER} ${NB_UID} ${HOME}
-ARG NB_USER=beakerx
-ENV HOME /home/${NB_USER}
-ENV SHELL /bin/bash
-
 COPY . $HOME
-RUN mkdir $HOME/.jupyter
+# RUN mkdir $HOME/.jupyter
 # COPY $HOME/beakerx.json $HOME/.jupyter/.
 # RUN chown -R $NB_UID $HOME
 
@@ -32,4 +26,5 @@ USER $NB_USER
 
 # Launch the notebook server
 WORKDIR $HOME
-CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
+
+CMD ["start-notebook.sh"]
