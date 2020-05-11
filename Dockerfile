@@ -18,7 +18,7 @@ RUN mv ffx-$FFX_VERSION ffx
 # Set up the user environment
 ENV NB_USER ffx
 ENV SHELL /bin/bash
-ENV NB_UID 1000
+ENV NB_UID 2000
 ENV HOME /home/$NB_USER
 
 RUN adduser --disabled-password \
