@@ -18,8 +18,8 @@ RUN ([ -f requirements.txt ] \
 USER root
 
 RUN git clone https://github.com/twosigma/beakerx.git
-RUN git checkout tags/1.4.1 -b master
 RUN cd beakerx
+RUN git checkout tags/1.4.1 -b master
 RUN conda env create -n beakerx -f configuration.yml
 RUN source activate beakerx
 RUN (cd beakerx; pip install -e . --verbose)
