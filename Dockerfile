@@ -26,7 +26,7 @@ ENV SHELL /bin/bash
 COPY . $HOME
 RUN mkdir $HOME/.jupyter
 # COPY $HOME/beakerx.json $HOME/.jupyter/.
-RUN chown -R $NB_UID $HOME
+# RUN chown -R $NB_UID $HOME
 
 USER $NB_USER
 
